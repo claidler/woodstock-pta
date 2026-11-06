@@ -2,6 +2,7 @@ import { site, getInvolved } from "../config/site.js";
 
 export default function Contact() {
   return (
+    <>
     <section className="band">
       <h1>Contact us</h1>
       <p>
@@ -28,5 +29,6 @@ export default function Contact() {
         .
       </p>
     </section>
+    </>
   );
 }

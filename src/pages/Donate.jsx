@@ -2,6 +2,7 @@ import { donations, donationNote, site } from "../config/site.js";
 
 export default function Donate() {
   return (
+    <>
     <section className="band">
       <h1>Support our fundraising</h1>
       <p>
@@ -32,5 +33,6 @@ export default function Donate() {
         <a href={`mailto:${site.email}`}>{site.email}</a>.
       </p>
     </section>
+    </>
   );
 }
