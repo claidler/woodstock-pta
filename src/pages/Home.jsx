@@ -36,7 +36,7 @@ export default function Home() {
         </section>
       )}
 
-      <section className="section">
+      <section className="band">
         <h2>{getInvolved.heading}</h2>
         {getInvolved.paragraphs.map((p) => (
           <p key={p}>{p}</p>

@@ -2,13 +2,15 @@ import { donations, donationNote, site } from "../config/site.js";
 
 export default function Donate() {
   return (
-    <section className="section">
+    <section className="band">
       <h1>Support our fundraising</h1>
       <p>
         Thank you to everyone who gives their time, attends our events and
         supports our fundraising. Your support helps us make a difference for
         the children at Woodstock CE Primary School.
       </p>
+    </section>
+    <section className="section">
       <div className="card-grid">
         {donations.map((d) => (
           <article className="card" key={d.label}>

@@ -2,7 +2,7 @@ import { site, getInvolved } from "../config/site.js";
 
 export default function Contact() {
   return (
-    <section className="section">
+    <section className="band">
       <h1>Contact us</h1>
       <p>
         If you would like to get involved, have an idea to share or would like
@@ -14,6 +14,8 @@ export default function Contact() {
         </a>
       </p>
       <p className="muted contact-email">{site.email}</p>
+    </section>
+    <section className="section">
       <h2>{getInvolved.heading}</h2>
       {getInvolved.paragraphs.map((p) => (
         <p key={p}>{p}</p>
