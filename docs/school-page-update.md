@@ -18,11 +18,17 @@ experiences for our children.
 **Visit our website** for upcoming events and ticketing, ways to donate,
 committee details and photos, and how to get involved:
 
-👉 [Friends of Woodstock PTA website](https://pta.example.org)
+👉 [Friends of Woodstock PTA website](https://pta.claidler.uk)
 
 To get in touch, email: friendsofwoodstockceprimarysch@gmail.com
 
 ---
 
-Replace `https://pta.example.org` with the real deployed URL (a
-`*.pages.dev` / `*.workers.dev` address or a custom domain).
+Deployed 2026-11-06 on Cloudflare Pages (free tier):
+
+- custom domain: <https://pta.claidler.uk>
+- direct Pages URL: <https://woodstock-pta.pages.dev>
+
+If the custom domain is ever dropped, swap the link above for the direct
+Pages URL. Re-point it by editing the `url` field in `src/config/site.js`
+as well, so the site and the school page agree.
