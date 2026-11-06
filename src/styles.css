@@ -132,6 +132,8 @@ a {
 .site-logo {
   height: 42px;
   width: auto;
+  position: relative;
+  top: -2px; /* optical nudge: lifts artwork centre to match the title glyphs */
 }
 
 .site-nav {
