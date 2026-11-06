@@ -280,6 +280,21 @@ a {
   font-size: 0.95rem;
 }
 
+.event-price {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  color: var(--colour-primary);
+}
+
+.event-sessions {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.1rem;
+}
+
+.event-sessions li {
+  margin-bottom: 0.35rem;
+}
+
 .event-image {
   display: block;
   width: 100%;

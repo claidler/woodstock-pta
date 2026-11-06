@@ -13,7 +13,17 @@ export default function EventCard({ event }) {
       <p className="event-meta">
         {[event.date, event.time, event.location].filter(Boolean).join(" · ")}
       </p>
+      {event.price && <p className="event-price">{event.price}</p>}
       <p>{event.description}</p>
+      {event.sessions && (
+        <ul className="event-sessions">
+          {event.sessions.map((s) => (
+            <li key={s.day}>
+              <strong>{s.day}</strong> — {s.details}
+            </li>
+          ))}
+        </ul>
+      )}
       {event.ticketUrl ? (
         <a
           className="button"

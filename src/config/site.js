@@ -54,10 +54,24 @@ export const events = [
     time: "",
     location: "School hall",
     image: "/events/winter-wonderland-disco.jpeg",
+    price: "Tickets £3.50 per child",
     description:
-      "Get ready for some winter sparkle at our Winter Wonderland Disco! Tickets are £3.50 per child — see the poster for full details and how to book.",
-    ticketUrl: "",
-    ticketLabel: "Book tickets",
+      "Time to kick off the festive season! Two evenings of festive fun, music and dancing at our Winter Wonderland school discos. Full event details and FAQs are on Eventbrite.",
+    sessions: [
+      {
+        day: "Wednesday 11 November",
+        details:
+          "Years 3–6, 6:30–7:30pm — drop-off disco, no parent chaperone required",
+      },
+      {
+        day: "Thursday 12 November",
+        details:
+          "Nursery & Reception 5:30–6:15pm; Years 1–2 6:30–7:15pm — parent chaperone required (max one parent per child)",
+      },
+    ],
+    ticketUrl:
+      "https://www.eventbrite.com/e/woodstock-winter-wonderland-tickets-2004255672670",
+    ticketLabel: "Book tickets on Eventbrite",
   },
 ];
 
