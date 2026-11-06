@@ -33,14 +33,34 @@ npm run build   # output in dist/
 
 ## Deploy (free, on Cloudflare)
 
-Two options:
+**Live deployment:** <https://pta.claidler.uk> (alias
+<https://woodstock-pta.pages.dev>) — Cloudflare Pages project
+`woodstock-pta`, production branch `main`.
 
-1. **Cloudflare Pages via GitHub (simplest):** push this repo to GitHub, then
-   in the Cloudflare dashboard create a Pages project connected to the repo.
-   Build command: `npm run build`, output directory: `dist`. Every push
-   redeploys automatically. The `public/_redirects` file makes client-side
-   routes work.
-2. **Alchemy (infrastructure as code):**
+1. **GitHub Action (what actually runs):** `.github/workflows/deploy.yml`
+   builds with `npm ci && npm run build` and runs
+   `wrangler pages deploy dist --project-name woodstock-pta` on every push to
+   `main`. It needs two repo secrets: `CLOUDFLARE_API_TOKEN` and
+   `CLOUDFLARE_ACCOUNT_ID`.
+
+   ```bash
+   gh secret set CLOUDFLARE_API_TOKEN --body "$TOKEN"
+   gh secret set CLOUDFLARE_ACCOUNT_ID --body "$ACCOUNT_ID"
+   gh run watch        # watch a deploy
+   ```
+
+   The `public/_redirects` file makes client-side routes (`/committee`,
+   `/events`, …) resolve to `index.html`. To deploy by hand instead of
+   waiting for CI:
+
+   ```bash
+   npm run build
+   CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... \
+     npx --yes wrangler pages deploy dist --project-name woodstock-pta \
+     --branch main --commit-dirty=true
+   ```
+
+2. **Alchemy (infrastructure as code, not currently used):**
 
    ```bash
    npm install --save-dev alchemy @alchemy.run/cloudflare effect
