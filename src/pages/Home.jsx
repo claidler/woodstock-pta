@@ -10,7 +10,6 @@ export default function Home() {
     <>
       <section className="hero">
         <Logo className="hero-logo" />
-        <p className="hero-motto">{site.motto}</p>
         <h1>{intro.heading}</h1>
         <p className="tagline">{site.tagline}</p>
         <div className="hero-actions">

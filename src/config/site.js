@@ -4,7 +4,6 @@ export const site = {
   name: "Friends of Woodstock CE Primary School",
   shortName: "Friends of Woodstock",
   tagline: "The Parent Teacher Association of Woodstock CE Primary School",
-  motto: "Let your light shine — Matthew 5:16",
   logo: "/fowp-logo.png",
   logoFallback: "/school-logo.png",
   schoolLogo: "/school-logo.png",

@@ -38,7 +38,6 @@ export default function Layout() {
       </main>
       <footer className="site-footer">
         <img className="footer-logo" src={site.schoolLogo} alt="Woodstock CE Primary School logo" />
-        <p className="footer-motto">{site.motto}</p>
         <p>
           <a href={`mailto:${site.email}`}>{site.email}</a>
         </p>
