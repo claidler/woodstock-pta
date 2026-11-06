@@ -35,6 +35,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer className="site-footer">
+        <p className="footer-motto">{site.motto}</p>
         <p>
           <a href={`mailto:${site.email}`}>{site.email}</a>
         </p>

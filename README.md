@@ -71,6 +71,13 @@ npm run build   # output in dist/
    This builds the Vite app and deploys it as a Cloudflare Worker serving
    static assets, all declared in code.
 
+## Branding
+
+Colours and fonts match the school website (woodstock.oxon.sch.uk, Juniper/e4education theme):
+navy `#183664` primary, light blue `#9CD4FF` secondary, periwinkle `#95B5E6` accent, link blue
+`#4587D0`, body text `#444444`; **Poppins** headings, **Open Sans** body; pill-shaped buttons.
+All tokens are CSS variables at the top of `src/styles.css`.
+
 ## Editing content
 
 Everything lives in **`src/config/site.js`**: committee members, events

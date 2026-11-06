@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <p className="hero-motto">{site.motto}</p>
         <h1>{intro.heading}</h1>
         <p className="tagline">{site.tagline}</p>
         <div className="hero-actions">
