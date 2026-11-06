@@ -41,6 +41,7 @@ export const committee = [
   { name: "Ari Tice", role: "Secretary", photo: "/committee/ari-tice.svg" },
   { name: "Siobhan Acha Derrington", role: "Communications", photo: "/committee/siobhan-acha-derrington.svg" },
   { name: "Sarah Rattigan", role: "Grants", photo: "/committee/sarah-rattigan.svg" },
+  { name: "Sam Holmes-Laidler", role: "Sustainability Lead", photo: "/committee/sam-holmes-laidler.svg" },
   { name: "Anne Hipwell", role: "Staff Representative", photo: "/committee/anne-hipwell.svg" },
   { name: "Anna Poole", role: "Staff Representative", photo: "/committee/anna-poole.svg" },
   { name: "Pip Dalton", role: "Staff Representative", photo: "/committee/pip-dalton.svg" },
