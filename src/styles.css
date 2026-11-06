@@ -281,9 +281,14 @@ a {
 }
 
 .event-price {
+  display: inline-block;
   font-family: var(--font-headings);
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: var(--colour-secondary);
   color: var(--colour-primary);
+  border-radius: var(--radius-pill);
+  padding: 0.25rem 0.9rem;
 }
 
 .event-sessions {
@@ -303,6 +308,26 @@ a {
   border-radius: 8px;
   margin-bottom: 1rem;
   background: var(--colour-bg);
+}
+
+@media (min-width: 680px) {
+  .event-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .event-card .event-image {
+    flex: 0 0 240px;
+    width: 240px;
+    max-height: none;
+    margin-bottom: 0;
+  }
+
+  .event-card-body {
+    flex: 1;
+    min-width: 0;
+  }
 }
 
 .contact-email {

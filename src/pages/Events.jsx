@@ -6,11 +6,11 @@ export default function Events() {
     <section className="section">
       <h1>Events &amp; ticketing</h1>
       <p>
-        Tickets for our events are sold through trusted ticketing platforms —
-        use the booking button on each event. Upcoming events are listed below.
+        Tickets for our events are sold through trusted ticketing platforms.
+        Use the booking button on each event. Upcoming events are listed below.
       </p>
       {events.length === 0 ? (
-        <p className="muted">No upcoming events right now — check back soon!</p>
+        <p className="muted">No upcoming events right now. Check back soon!</p>
       ) : (
         <div className="card-grid">
           {events.map((event) => (
