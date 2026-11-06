@@ -16,8 +16,8 @@ export default function Home() {
           <Link className="button" to="/events">
             See our events
           </Link>
-          <Link className="button button-secondary" to="/donate">
-            Donate
+          <Link className="button button-secondary" to="/contact">
+            Get in touch
           </Link>
         </div>
       </section>

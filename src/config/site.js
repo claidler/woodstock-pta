@@ -75,23 +75,4 @@ export const events = [
   },
 ];
 
-export const donations = [
-  {
-    label: "Donate via JustGiving",
-    url: "",
-    description: "Make a one-off or regular donation through our JustGiving page.",
-  },
-  {
-    label: "Donate via PayPal",
-    url: "",
-    description: "Send a donation securely through PayPal.",
-  },
-  {
-    label: "Pay via SchoolMoney",
-    url: "",
-    description: "Pay for school items, trips and event costs through SchoolMoney.",
-  },
-];
 
-export const donationNote =
-  "Donations and payments are handled by established payment providers (linked above) rather than through this website, so your details stay secure. Please replace the placeholder links in src/config/site.js with the PTA's real pages.";

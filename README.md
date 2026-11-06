@@ -2,13 +2,13 @@
 
 A rough-but-working React site for the school PTA, based on the content of the
 existing school page. It covers the basics (welcome, get involved, committee
-with photos, contact) and links out to proper platforms for **ticketing** and
-**donations/payments**, which should never be handled by the site itself.
+with photos, contact) and links out to proper platforms for **ticketing**,
+which should never be handled by the site itself.
 
 ## Stack
 
 - **React 18 + Vite** (plain JSX) with `react-router-dom` for pages:
-  Home, Events, Committee, Donate, Contact.
+  Home, Events, Committee, Contact.
 - **Alchemy (alchemy.run)** — Infrastructure-as-Code in TypeScript, used in
   `infra/alchemy.run.ts` to deploy the built site to Cloudflare as a Worker
   with static assets.
@@ -86,7 +86,7 @@ All tokens are CSS variables at the top of `src/styles.css`.
 ## Editing content
 
 Everything lives in **`src/config/site.js`**: committee members, events
-(including the ticket link per event), donation/payment links, contact email.
+(including the ticket link per event), contact email.
 Edit that one file and rebuild — no other code changes needed.
 
 ### Committee photos
@@ -95,13 +95,13 @@ Drop real photos (e.g. `carys-connelly.jpg`) into `public/committee/` and
 point the member's `photo` field at them. The repo ships with SVG placeholder
 avatars (initials) so the layout works out of the box.
 
-### Tickets, donations, payments
+### Tickets and payments
 
 Set `ticketUrl` on an event (e.g. an Eventbrite page) and the Events page
-shows a "Book tickets" button. Set the `url` fields under `donations` (e.g.
-JustGiving, PayPal, SchoolMoney) and the Donate page links out to them.
-Keep payments on those established, PCI-compliant platforms rather than
-collecting card details on this site.
+shows a "Book tickets" button. Keep payments on those established,
+PCI-compliant platforms rather than collecting card details on this site.
+If donation links (e.g. JustGiving) become available later, re-add a Donate
+page that links out to them.
 
 ## School website page
 

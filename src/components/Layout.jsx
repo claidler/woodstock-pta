@@ -6,7 +6,6 @@ const navItems = [
   { to: "/", label: "Home", end: true },
   { to: "/events", label: "Events" },
   { to: "/committee", label: "Committee" },
-  { to: "/donate", label: "Donate" },
   { to: "/contact", label: "Contact" },
 ];
 

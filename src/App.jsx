@@ -3,7 +3,6 @@ import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Events from "./pages/Events.jsx";
 import Committee from "./pages/Committee.jsx";
-import Donate from "./pages/Donate.jsx";
 import Contact from "./pages/Contact.jsx";
 
 export default function App() {
@@ -13,7 +12,6 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="events" element={<Events />} />
         <Route path="committee" element={<Committee />} />
-        <Route path="donate" element={<Donate />} />
         <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>

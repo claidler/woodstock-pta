@@ -15,8 +15,8 @@ Teacher Association (PTA). We bring parents, carers, staff and the local
 community together to support our school, raise funds and create memorable
 experiences for our children.
 
-**Visit our website** for upcoming events and ticketing, ways to donate,
-committee details and photos, and how to get involved:
+**Visit our website** for upcoming events and ticketing, committee details
+and photos, and how to get involved:
 
 👉 [Friends of Woodstock PTA website](https://pta.claidler.uk)
 
