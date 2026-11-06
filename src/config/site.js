@@ -60,13 +60,28 @@ export const events = [
     sessions: [
       {
         day: "Wednesday 11 November",
-        details:
-          "Years 3–6, 6:30–7:30pm. Drop-off disco, no parent chaperone required.",
+        slots: [
+          {
+            group: "Years 3–6",
+            time: "6:30–7:30pm",
+            note: "Drop-off disco, no parent chaperone required",
+          },
+        ],
       },
       {
         day: "Thursday 12 November",
-        details:
-          "Nursery & Reception 5:30–6:15pm; Years 1–2 6:30–7:15pm. Parent chaperone required (max one parent per child).",
+        slots: [
+          {
+            group: "Nursery & Reception",
+            time: "5:30–6:15pm",
+            note: "Parent chaperone required (max one parent per child)",
+          },
+          {
+            group: "Years 1–2",
+            time: "6:30–7:15pm",
+            note: "Parent chaperone required (max one parent per child)",
+          },
+        ],
       },
     ],
     ticketUrl:
