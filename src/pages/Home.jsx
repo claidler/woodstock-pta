@@ -9,16 +9,18 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <Logo className="hero-logo" />
-        <h1>{intro.heading}</h1>
-        <p className="tagline">{site.tagline}</p>
-        <div className="hero-actions">
-          <Link className="button" to="/events">
-            See our events
-          </Link>
-          <Link className="button button-secondary" to="/contact">
-            Get in touch
-          </Link>
+        <div className="hero-card">
+          <Logo className="hero-logo" />
+          <h1>{intro.heading}</h1>
+          <p className="tagline">{site.tagline}</p>
+          <div className="hero-actions">
+            <Link className="button" to="/events">
+              See our events
+            </Link>
+            <Link className="button button-secondary" to="/contact">
+              Get in touch
+            </Link>
+          </div>
         </div>
       </section>
 
