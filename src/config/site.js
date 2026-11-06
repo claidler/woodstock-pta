@@ -1,5 +1,6 @@
 export const site = {
-  url: "https://woodstock-pta.pages.dev",
+  url: "https://pta.claidler.uk",
+  pagesUrl: "https://woodstock-pta.pages.dev",
   name: "Friends of Woodstock CE Primary School",
   shortName: "Friends of Woodstock",
   tagline: "The Parent Teacher Association of Woodstock CE Primary School",
