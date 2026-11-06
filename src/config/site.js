@@ -64,7 +64,7 @@ export const events = [
           {
             group: "Years 3–6",
             time: "6:30–7:30pm",
-            note: "Drop-off disco: no chaperone needed. Pick up your child from the hall at 7:30pm.",
+            note: "Drop-off disco, no parent chaperone required",
           },
         ],
       },
@@ -74,12 +74,12 @@ export const events = [
           {
             group: "Nursery & Reception",
             time: "5:30–6:15pm",
-            note: "One parent/carer per child must chaperone in the disco (max one per child).",
+            note: "Parent chaperone required (max one parent per child)",
           },
           {
             group: "Years 1–2",
             time: "6:30–7:15pm",
-            note: "One parent/carer per child must chaperone in the disco (max one per child).",
+            note: "Parent chaperone required (max one parent per child)",
           },
         ],
       },
