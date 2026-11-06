@@ -195,9 +195,9 @@ a {
   place-items: center;
   text-align: center;
   padding: clamp(2.5rem, 7vw, 4.5rem) 1rem;
-  margin: 0 -1.5rem 2.5rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--colour-border);
+  /* full-bleed: flush under the sticky header, edge to edge across the viewport */
+  margin: -2rem calc(50% - 50vw) 2.5rem;
+  border-radius: 0 0 var(--radius) var(--radius);
   background-image: url("/img/landscape.jpg");
   background-size: cover;
   background-position: center 60%;
