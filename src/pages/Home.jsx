@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import EventCard from "../components/EventCard.jsx";
+import Logo from "../components/Logo.jsx";
 import { site, intro, getInvolved, events } from "../config/site.js";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <Logo className="hero-logo" />
         <p className="hero-motto">{site.motto}</p>
         <h1>{intro.heading}</h1>
         <p className="tagline">{site.tagline}</p>

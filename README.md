@@ -71,6 +71,11 @@ npm run build   # output in dist/
    This builds the Vite app and deploys it as a Cloudflare Worker serving
    static assets, all declared in code.
 
+## Logos
+
+- `public/school-logo.png` — official Woodstock CE Primary School logo (from the school website); used in the header (fallback), hero, footer and favicon.
+- `public/fowp-logo.png` — the Friends of Woodstock (FOWP) logo, expected here. The header/hero `Logo` component tries `/fowp-logo.png` first and falls back to the school logo, so dropping the FOWP logo into `public/` is all that's needed. Update `logo`/`logoFallback` in `src/config/site.js` if you prefer different paths.
+
 ## Branding
 
 Colours and fonts match the school website (woodstock.oxon.sch.uk, Juniper/e4education theme):

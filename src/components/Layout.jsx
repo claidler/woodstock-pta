@@ -1,4 +1,5 @@
 import { NavLink, Outlet, Link } from "react-router-dom";
+import Logo from "./Logo.jsx";
 import { site } from "../config/site.js";
 
 const navItems = [
@@ -14,7 +15,8 @@ export default function Layout() {
     <div className="site">
       <header className="site-header">
         <Link to="/" className="site-title">
-          {site.shortName}
+          <Logo className="site-logo" />
+          <span>{site.shortName}</span>
         </Link>
         <nav className="site-nav">
           {navItems.map((item) => (
@@ -35,6 +37,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer className="site-footer">
+        <img className="footer-logo" src={site.schoolLogo} alt="Woodstock CE Primary School logo" />
         <p className="footer-motto">{site.motto}</p>
         <p>
           <a href={`mailto:${site.email}`}>{site.email}</a>

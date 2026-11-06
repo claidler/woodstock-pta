@@ -62,11 +62,19 @@ a {
 }
 
 .site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-family: var(--font-headings);
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--colour-primary);
   text-decoration: none;
+}
+
+.site-logo {
+  height: 42px;
+  width: auto;
 }
 
 .site-nav {
@@ -111,6 +119,18 @@ a {
 
 .site-footer a {
   color: var(--colour-secondary);
+}
+
+.footer-logo {
+  height: 52px;
+  width: auto;
+  margin-bottom: 0.75rem;
+}
+
+.hero-logo {
+  height: 76px;
+  width: auto;
+  margin-bottom: 1rem;
 }
 
 .footer-motto {
