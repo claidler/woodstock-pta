@@ -1,6 +1,14 @@
 export default function EventCard({ event }) {
   return (
     <article className="card event-card">
+      {event.image && (
+        <img
+          className="event-image"
+          src={event.image}
+          alt={event.title}
+          loading="lazy"
+        />
+      )}
       <h3>{event.title}</h3>
       <p className="event-meta">
         {[event.date, event.time, event.location].filter(Boolean).join(" · ")}

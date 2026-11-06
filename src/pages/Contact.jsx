@@ -10,9 +10,10 @@ export default function Contact() {
       </p>
       <p>
         <a className="button" href={`mailto:${site.email}`}>
-          {site.email}
+          Email us
         </a>
       </p>
+      <p className="muted contact-email">{site.email}</p>
       <h2>{getInvolved.heading}</h2>
       {getInvolved.paragraphs.map((p) => (
         <p key={p}>{p}</p>

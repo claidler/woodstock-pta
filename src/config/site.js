@@ -50,11 +50,12 @@ export const events = [
   {
     id: "winter-wonderland-disco",
     title: "Winter Wonderland Disco",
-    date: "",
+    date: "Wednesday 11 & Thursday 12 November 2026",
     time: "",
     location: "School hall",
+    image: "/events/winter-wonderland-disco.jpeg",
     description:
-      "Get ready for some winter sparkle at our Winter Wonderland Disco! Event details and booking information will be shared here and via school communications.",
+      "Get ready for some winter sparkle at our Winter Wonderland Disco! Tickets are £3.50 per child — see the poster for full details and how to book.",
     ticketUrl: "",
     ticketLabel: "Book tickets",
   },
