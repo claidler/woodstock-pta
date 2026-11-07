@@ -199,7 +199,7 @@ a {
   padding: clamp(2.5rem, 7vw, 4.5rem) 1rem;
   /* full-bleed: flush under the sticky header, edge to edge across the viewport */
   margin: -2rem calc(50% - 50vw) 2.5rem;
-  border-radius: 0 0 var(--radius) var(--radius);
+  border-radius: 0;
   background-image: url("/img/landscape.jpg");
   background-size: cover;
   background-position: center 60%;
