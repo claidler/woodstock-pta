@@ -165,11 +165,11 @@ a {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 1rem;
 }
 
 .site-footer {
-  margin-top: 2rem;
+  margin-top: 0;
   padding: 0.9rem 1.5rem;
   display: flex;
   align-items: center;
@@ -422,6 +422,11 @@ a {
 
 .contact-email {
   overflow-wrap: anywhere;
+}
+
+/* no dead space between the last block of content and the footer */
+.site-main > :last-child {
+  margin-bottom: 0;
 }
 
 .committee-card {

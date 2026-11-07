@@ -7,14 +7,13 @@ export default function Contact() {
       <h1>Contact us</h1>
       <p>
         If you would like to get involved, have an idea to share or would like
-        to support an event, please email:
+        to support an event, drop us an email and we will get back to you.
       </p>
       <p>
         <a className="button" href={`mailto:${site.email}`}>
           Email us
         </a>
       </p>
-      <p className="muted contact-email">{site.email}</p>
     </section>
     <section className="section">
       <h2>{getInvolved.heading}</h2>
