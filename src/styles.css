@@ -170,8 +170,12 @@ a {
 
 .site-footer {
   margin-top: 2rem;
-  padding: 2rem 1.5rem;
-  text-align: center;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
   background: var(--colour-primary);
   color: #fff;
 }
@@ -180,10 +184,14 @@ a {
   color: var(--colour-secondary);
 }
 
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
 .footer-logo {
-  height: 52px;
+  height: 36px;
   width: auto;
-  margin-bottom: 0.75rem;
 }
 
 .hero-logo {

@@ -37,14 +37,12 @@ export default function Layout() {
       </main>
       <footer className="site-footer">
         <img className="footer-logo" src={site.schoolLogo} alt="Woodstock CE Primary School logo" />
-        <p>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
-        </p>
-        <p>
+        <nav className="footer-links">
+          <a href={`mailto:${site.email}`}>Email</a>
           <a href={site.schoolUrl} target="_blank" rel="noreferrer">
-            Woodstock CE Primary School
+            School
           </a>
-        </p>
+        </nav>
       </footer>
     </div>
   );
