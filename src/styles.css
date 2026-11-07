@@ -170,28 +170,70 @@ a {
 
 .site-footer {
   margin-top: 2rem;
-  padding: 1rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
   background: var(--colour-primary);
-  color: #fff;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.site-footer a {
-  color: var(--colour-secondary);
+.footer-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem 3rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-logo {
+  height: 44px;
+  width: auto;
+  margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-links {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.9rem;
 }
 
-.footer-logo {
-  height: 36px;
-  width: auto;
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--colour-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+
+.footer-legal {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hero-logo {

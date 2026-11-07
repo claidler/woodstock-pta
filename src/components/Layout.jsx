@@ -36,13 +36,53 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer className="site-footer">
-        <img className="footer-logo" src={site.schoolLogo} alt="Woodstock CE Primary School logo" />
-        <nav className="footer-links">
-          <a href={`mailto:${site.email}`}>Email</a>
-          <a href={site.schoolUrl} target="_blank" rel="noreferrer">
-            School
-          </a>
-        </nav>
+        <div className="footer-inner">
+          <div className="footer-brand">
+            <img className="footer-logo" src={site.logo} alt={site.shortName} />
+            <p className="footer-tagline">{site.tagline}</p>
+          </div>
+          <nav className="footer-links" aria-label="Footer">
+            <a className="footer-link" href={`mailto:${site.email}`}>
+              <svg
+                className="footer-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+              <span>{site.email}</span>
+            </a>
+            <a
+              className="footer-link"
+              href={site.schoolUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg
+                className="footer-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 21h18" />
+                <path d="M5 21V10l7-5 7 5v11" />
+                <path d="M9 21v-6h6v6" />
+              </svg>
+              <span>Woodstock CE Primary School</span>
+            </a>
+          </nav>
+        </div>
+        <div className="footer-legal">© {new Date().getFullYear()} Friends of Woodstock</div>
       </footer>
     </div>
   );
