@@ -5,6 +5,7 @@ import { site } from "../config/site.js";
 const navItems = [
   { to: "/", label: "Home", end: true },
   { to: "/events", label: "Events" },
+  { to: "/governance", label: "Governance" },
   { to: "/committee", label: "Committee" },
   { to: "/contact", label: "Contact" },
 ];
