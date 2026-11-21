@@ -20,8 +20,13 @@ export default function Governance() {
         </li>
       </ul>
       <p>
-        The association is run by a committee (who are also the charity trustees)
-        which is currently comprised of parents, carers and staff.
+        Because it is a separate organisation, the association is its own
+        legal entity: the School is not responsible for its debts or
+        obligations, and the association is not responsible for the School’s.
+      </p>
+      <p>
+        The association is run by a committee (who are also the charity
+        trustees) which is currently comprised of parents, carers and staff.
       </p>
       <p>
         <Link to="/committee">Meet the committee &rarr;</Link>

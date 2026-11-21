@@ -12,7 +12,7 @@ export default function Events() {
       {events.length === 0 ? (
         <p className="muted">No upcoming events right now. Check back soon!</p>
       ) : (
-        <div className="card-grid">
+        <div className="card-grid events-grid">
           {events.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
