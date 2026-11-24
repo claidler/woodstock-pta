@@ -15,7 +15,7 @@ export default function Contact() {
         </a>
       </p>
       <p className="muted">
-        Please use this email address only for PtA-specific volunteering or
+        Please use this email address only for PTA-specific volunteering or
         suggestions. All other communications and enquiries should go via the
         school office.
       </p>
