@@ -46,9 +46,14 @@ export const committee = [
   { name: "Pip Dalton", role: "Staff Representative", photo: "/committee/pip-dalton.svg" },
 ];
 
-export const events = [
+export const upcomingEvents = [];
+
+// Planned: auto-archive once an event's date has passed — keep a machine-readable
+// `date` field on each event, then derive past/upcoming from today's date.
+export const pastEvents = [
   {
     id: "winter-wonderland-disco",
+    dateEnd: "2026-11-12",
     title: "Winter Wonderland Disco",
     date: "Wednesday 11 & Thursday 12 November 2026",
     time: "",

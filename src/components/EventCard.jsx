@@ -1,4 +1,4 @@
-export default function EventCard({ event }) {
+export default function EventCard({ event, past = false }) {
   return (
     <article className="card event-card">
       {event.image && (
@@ -37,7 +37,9 @@ export default function EventCard({ event }) {
             ))}
           </div>
         )}
-        {event.ticketUrl ? (
+        {past ? (
+          <p className="muted">Event over — see you at the next one!</p>
+        ) : event.ticketUrl ? (
           <a
             className="button"
             href={event.ticketUrl}

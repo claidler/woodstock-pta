@@ -14,6 +14,11 @@ export default function Contact() {
           Email us
         </a>
       </p>
+      <p className="muted">
+        Please use this email address only for PtA-specific volunteering or
+        suggestions. All other communications and enquiries should go via the
+        school office.
+      </p>
     </section>
     <section className="section">
       <h2>{getInvolved.heading}</h2>

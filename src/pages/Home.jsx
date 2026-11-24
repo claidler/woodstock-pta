@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import EventCard from "../components/EventCard.jsx";
 import Logo from "../components/Logo.jsx";
-import { site, intro, getInvolved, events } from "../config/site.js";
+import { site, intro, getInvolved, upcomingEvents } from "../config/site.js";
 
 export default function Home() {
-  const nextEvent = events[0];
+  const nextEvent = upcomingEvents[0];
 
   return (
     <>
